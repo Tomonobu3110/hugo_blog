@@ -17,7 +17,7 @@
       <pubDate>Wed, 01 Apr 2020 18:23:05 +0900</pubDate>
       
       <guid>https://tomonobu3110.github.io/hugo_blog/posts/my-2nd-post/</guid>
-      <description>AAA ** strong **
+      <description>AAA strong
 Code var s = &amp;#34;JavaScript syntax highlighting&amp;#34;; alert(s); s = &amp;#34;Python syntax highlighting&amp;#34; print s CCC  aaa bbb ccc  EOF</description>
     </item>
     

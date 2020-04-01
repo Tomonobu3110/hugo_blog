@@ -4,7 +4,7 @@ date: 2020-04-01T18:23:05+09:00
 ---
 # AAA
 
-** strong **
+**strong**
 
 ## Code
 
