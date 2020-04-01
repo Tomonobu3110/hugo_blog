@@ -1,3 +1,5 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://tomonobu3110.github.io/hugo_blog/"
+languageCode = "ja-JP"
+title = "Tomo3110's New Hugo Site"
+publishDir = "docs"
+
