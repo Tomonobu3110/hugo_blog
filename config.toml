@@ -3,4 +3,5 @@ languageCode = "en-us"
 title = "Tomo3110's New Hugo Site"
 publishDir = "docs"
 theme = "pickles"
+copyright = "Copyright; 2020, Tomonobu Saito. All rights reserved."
 
