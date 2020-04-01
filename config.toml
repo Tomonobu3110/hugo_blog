@@ -1,4 +1,4 @@
-baseURL = "http://tomonobu3110.github.io/hugo_blog/"
+baseURL = "https://tomonobu3110.github.io/hugo_blog/"
 languageCode = "ja-JP"
 title = "Tomo3110's New Hugo Site"
 publishDir = "docs"

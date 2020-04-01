@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tomo3110&#39;s New Hugo Site</title>
-    <link>http://tomonobu3110.github.io/hugo_blog/</link>
+    <link>https://tomonobu3110.github.io/hugo_blog/</link>
     <description>Recent content on Tomo3110&#39;s New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Wed, 01 Apr 2020 14:14:38 +0900</lastBuildDate>
     
-	<atom:link href="http://tomonobu3110.github.io/hugo_blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tomonobu3110.github.io/hugo_blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My First Post</title>
-      <link>http://tomonobu3110.github.io/hugo_blog/posts/my-first-post/</link>
+      <link>https://tomonobu3110.github.io/hugo_blog/posts/my-first-post/</link>
       <pubDate>Wed, 01 Apr 2020 14:14:38 +0900</pubDate>
       
-      <guid>http://tomonobu3110.github.io/hugo_blog/posts/my-first-post/</guid>
+      <guid>https://tomonobu3110.github.io/hugo_blog/posts/my-first-post/</guid>
       <description>My first post.</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>http://tomonobu3110.github.io/hugo_blog/post/my-first-post/</link>
+      <link>https://tomonobu3110.github.io/hugo_blog/post/my-first-post/</link>
       <pubDate>Wed, 01 Apr 2020 14:10:15 +0900</pubDate>
       
-      <guid>http://tomonobu3110.github.io/hugo_blog/post/my-first-post/</guid>
+      <guid>https://tomonobu3110.github.io/hugo_blog/post/my-first-post/</guid>
       <description>My first post!</description>
     </item>
     
