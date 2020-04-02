@@ -109,11 +109,13 @@ $ git submodule add https://github.com/mismith0227/hugo_theme_pickles.git themes
 [HugoをWebサーバとして使う](https://wave.hatenablog.com/entry/2016/05/12/074500)
 
 ```bash
-$ hugo server --bind="43.31.104.100" --port=8080 --baseURL="43.31.104.100"
+$ hugo server --bind="xxx.xxx.xxx.xxx" --port=8080 --baseURL="xxx.xxx.xxx.xxx"
 ```
 
-ブラウザで http://43.31.104.100:8080/ にアクセスすると  
+ブラウザで http://xxx.xxx.xxx.xxx:8080/ にアクセスすると  
 ホームページが見える！！
+
+注：xxx.xxx.xxx.xxx はローカルマシンのIPアドレス
 
 # ビルドとデプロイ
 

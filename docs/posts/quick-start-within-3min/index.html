@@ -119,9 +119,10 @@ $ vi content/posts/my-first-post.md
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add https://github.com/mismith0227/hugo_theme_pickles.git themes/pickles
 </code></pre></div><h1 id="ローカルデバッグ">ローカルデバッグ</h1>
 <p><a href="https://wave.hatenablog.com/entry/2016/05/12/074500">HugoをWebサーバとして使う</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo server --bind<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;43.31.104.100&#34;</span> --port<span style="color:#f92672">=</span><span style="color:#ae81ff">8080</span> --baseURL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;43.31.104.100&#34;</span>
-</code></pre></div><p>ブラウザで http://43.31.104.100:8080/ にアクセスすると<br>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo server --bind<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;xxx.xxx.xxx.xxx&#34;</span> --port<span style="color:#f92672">=</span><span style="color:#ae81ff">8080</span> --baseURL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;xxx.xxx.xxx.xxx&#34;</span>
+</code></pre></div><p>ブラウザで <a href="http://xxx.xxx.xxx.xxx">http://xxx.xxx.xxx.xxx</a>:8080/ にアクセスすると<br>
 ホームページが見える！！</p>
+<p>注：xxx.xxx.xxx.xxx はローカルマシンのIPアドレス</p>
 <h1 id="ビルドとデプロイ">ビルドとデプロイ</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo -D
 </code></pre></div><ul>
