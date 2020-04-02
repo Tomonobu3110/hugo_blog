@@ -78,15 +78,13 @@ $ git push -u origin master
 $ vi config.toml
 ```
 
-```toml
------
+```config.toml
 baseurl = "https://tomonobu3110.github.io/hugo_blog/"
 languageCode = "ja-JP"
 title = "Tomo3110's New Hugo Site"
 publishDir = "docs"
 copyright = "Copyright; 2020, Tomonobu Saito. All rights reserved."
 theme = "pickles"
------
 ```
 
 # 記事追加
