@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tomonobu3110.github.io/hugo_blog/posts/quick-start-within-3min/</loc>
-    <lastmod>2020-04-02T10:58:52+09:00</lastmod>
+    <loc>https://tomonobu3110.github.io/hugo_blog/post/</loc>
+    <lastmod>2020-04-02T11:33:26+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomonobu3110.github.io/hugo_blog/post/</loc>
-    <lastmod>2020-04-02T10:58:52+09:00</lastmod>
+    <loc>https://tomonobu3110.github.io/hugo_blog/posts/test/</loc>
+    <lastmod>2020-04-02T11:33:26+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://tomonobu3110.github.io/hugo_blog/</loc>
+    <lastmod>2020-04-02T11:33:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tomonobu3110.github.io/hugo_blog/posts/quick-start-within-3min/</loc>
     <lastmod>2020-04-02T10:58:52+09:00</lastmod>
   </url>
   

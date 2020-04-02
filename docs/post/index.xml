@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>Copyright; 2020, Tomonobu Saito. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 02 Apr 2020 10:58:52 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2020 11:33:26 +0900</lastBuildDate>
     
 	<atom:link href="https://tomonobu3110.github.io/hugo_blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://tomonobu3110.github.io/hugo_blog/posts/test/</link>
+      <pubDate>Thu, 02 Apr 2020 11:33:26 +0900</pubDate>
+      
+      <guid>https://tomonobu3110.github.io/hugo_blog/posts/test/</guid>
+      <description>ボスの目の前でポストを作成して即反映するデモ
+でも、ミーティング中時間がなくて空振りでした
+んがふふ</description>
+    </item>
     
     <item>
       <title>Hugo &#43; GitHub をつかって3分で静的サイトを立ち上げる</title>
@@ -18,7 +29,10 @@
       <pubDate>Thu, 02 Apr 2020 10:58:52 +0900</pubDate>
       
       <guid>https://tomonobu3110.github.io/hugo_blog/posts/quick-start-within-3min/</guid>
-      <description>環境：ローカルマシン(Ubuntu 16.04 LTS) GitHub HUGO使い方 https://wiki.browniealice.net/technote/hugo/how_to_use_hugo/ 「Hugoは静的Webページ変換ツールの1つ」 「基本的にはMarkdownで記事を書き, Hugoを起動して変換してもらって所定の静的なWebページを作る.」 HugoとGitHub Pagesで静的サイトを公開する https://qiita.com/satzz/items/e24bd703fc04fb45f7ef &amp;lt;&amp;lt; Hugoのインストール (Ubuntu 16.04 LTS) &amp;gt;&amp;gt; × $ sudo apt-get install hugo --&amp;gt; 古いhugoがインストールされる × $ wget https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb × $ sudo apt install ./hugo_0.40.2_Linux-64bit.deb ※ これでもだいぶ古い 〇 $ wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.deb 〇 $ sudo apt install ./hugo_0.68.3_Linux-64bit.deb ※ 太田まさんが使っているバージョン &amp;lt;&amp;lt; サイト(hugo_blog)を作る &amp;gt;&amp;gt; $ hugo new site hugo_blog Congratulations! Your new Hugo site is created in &amp;quot;/home/tomonobu/git/hugo_blog&amp;quot;. $ cd hugo_blog &amp;lt;&amp;lt; gitにコミット &amp;gt;&amp;gt; $ git init .</description>
+      <description>環境  ローカルマシン(Ubuntu 16.04 LTS) GitHubアカウントがあること  参考になるブログなど HUGO使い方
+「Hugoは静的Webページ変換ツールの1つ」 「基本的にはMarkdownで記事を書き, Hugoを起動して変換してもらって所定の静的なWebページを作る.」
+HugoとGitHub Pagesで静的サイトを公開する
+Hugoのインストール (Ubuntu 16.04 LTS) × 古いhugoがインストールされる $ sudo apt-get install hugo × これでもだいぶ古い $ wget https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb $ sudo apt install ./hugo_0.40.2_Linux-64bit.deb ○ 太田まさんが使っているバージョン $ wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.deb $ sudo apt install ./hugo_0.68.3_Linux-64bit.deb サイト(hugo_blog)を作る $ hugo new site hugo_blog Congratulations! Your new Hugo site is created in &amp;#34;/home/tomonobu/git/hugo_blog&amp;#34;. gitにコミット $ cd hugo_blog $ git init . $ git add -A $ git commit -m &amp;#34;Init Hugo.</description>
     </item>
     
     <item>

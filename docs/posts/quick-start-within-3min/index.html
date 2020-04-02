@@ -63,126 +63,91 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <pre><code>  環境：ローカルマシン(Ubuntu 16.04 LTS)
-        GitHub
+    <h1 id="環境">環境</h1>
+<ul>
+<li>ローカルマシン(Ubuntu 16.04 LTS)</li>
+<li>GitHubアカウントがあること</li>
+</ul>
+<h1 id="参考になるブログなど">参考になるブログなど</h1>
+<p><a href="https://wiki.browniealice.net/technote/hugo/how_to_use_hugo/">HUGO使い方</a><br>
+「Hugoは静的Webページ変換ツールの1つ」
+「基本的にはMarkdownで記事を書き, Hugoを起動して変換してもらって所定の静的なWebページを作る.」</p>
+<p><a href="https://qiita.com/satzz/items/e24bd703fc04fb45f7ef">HugoとGitHub Pagesで静的サイトを公開する</a></p>
+<h1 id="hugoのインストール-ubuntu-1604-lts">Hugoのインストール (Ubuntu 16.04 LTS)</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">× 古いhugoがインストールされる
+$ sudo apt-get install hugo 
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">× これでもだいぶ古い
+$ wget https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb
+$ sudo apt install ./hugo_0.40.2_Linux-64bit.deb
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">○ 太田まさんが使っているバージョン
+$ wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.deb
+$ sudo apt install ./hugo_0.68.3_Linux-64bit.deb
+</code></pre></div><h1 id="サイトhugo_blogを作る">サイト(hugo_blog)を作る</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new site hugo_blog
+Congratulations! Your new Hugo site is created in <span style="color:#e6db74">&#34;/home/tomonobu/git/hugo_blog&#34;</span>.
+</code></pre></div><h1 id="gitにコミット">gitにコミット</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd hugo_blog
+$ git init .
+$ git add -A
+$ git commit -m <span style="color:#e6db74">&#34;Init Hugo.&#34;</span>
+</code></pre></div><h1 id="githubにあげる">GitHubにあげる</h1>
+<p>GitHubでリポジトリ作成 (hugo_blog)<br>
+以下、GitHubで表示されるチュートリアル</p>
+<pre><code class="language-none" data-lang="none">echo &quot;# hugo_blog&quot; &gt;&gt; README.md  
+git init  
+git add README.md  
+git commit -m &quot;first commit&quot;  
+git remote add origin https://github.com/Tomonobu3110/hugo_blog.git  
+git push -u origin master  
+</code></pre><p>実際の作業は↓</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git remote add origin https://github.com/Tomonobu3110/hugo_blog.git
+$ git push -u origin master
+</code></pre></div><h1 id="設定ファイルいじり">設定ファイルいじり</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ vi config.toml
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-config.toml" data-lang="config.toml"><span style="color:#a6e22e">baseurl</span> = <span style="color:#e6db74">&#34;https://tomonobu3110.github.io/hugo_blog/&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;ja-JP&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Tomo3110&#39;s New Hugo Site&#34;</span>
+<span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
+<span style="color:#a6e22e">copyright</span> = <span style="color:#e6db74">&#34;Copyright; 2020, Tomonobu Saito. All rights reserved.&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;pickles&#34;</span>
+</code></pre></div><h1 id="記事追加">記事追加</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new posts/my-first-post.md
+$ vi content/posts/my-first-post.md
+</code></pre></div><p><a href="https://k-kaz-git.github.io/post/hugo-markdown/">Hugo で使える Markdown の記法</a></p>
+<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p>
+<h1 id="テーマのダウンロードpickles">テーマのダウンロード(pickles)</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add https://github.com/mismith0227/hugo_theme_pickles.git themes/pickles
+</code></pre></div><h1 id="ローカルデバッグ">ローカルデバッグ</h1>
+<p><a href="https://wave.hatenablog.com/entry/2016/05/12/074500">HugoをWebサーバとして使う</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo server --bind<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;43.31.104.100&#34;</span> --port<span style="color:#f92672">=</span><span style="color:#ae81ff">8080</span> --baseURL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;43.31.104.100&#34;</span>
+</code></pre></div><p>ブラウザで http://43.31.104.100:8080/ にアクセスすると<br>
+ホームページが見える！！</p>
+<h1 id="ビルドとデプロイ">ビルドとデプロイ</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo -D
+</code></pre></div><ul>
+<li>&ldquo;-D&rdquo; はドラフト版も含める (ドラフト記事は記事の .md のヘッダに draft : true がある)</li>
+<li>&ldquo;-t&rdquo; はテーマ指定</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git add -A
+$ git commit -m <span style="color:#e6db74">&#34;theme : pickles&#34;</span>
+$ git push origin master
+</code></pre></div><p>テーマがあると docs の下に index.html が生成される様子<br>
+テーマがないと index.xml だけ&hellip;</p>
+<h1 id="giuhub側">GiuHub側</h1>
+<p>リポジトリのページを開いて Settings -&gt; GutHub Pages -&gt; Source -&gt; master branch /docs folder と設定して保存する.<br>
+するとmasterブランチの docs フォルダ 以下がWebページだとみなしてWebサイトにしてくれる.</p>
+<hr>
+<p>Your site is published at <a href="https://tomonobu3110.github.io/hugo_blog/">https://tomonobu3110.github.io/hugo_blog/</a></p>
+<hr>
+<h1 id="テーマについて">テーマについて</h1>
+<p>テーマは &ldquo;Pickles&rdquo; がいい感じ<br>
+<a href="https://themes.gohugo.io/hugo_theme_pickles/">https://themes.gohugo.io/hugo_theme_pickles/</a></p>
+<p>いろいろ追加&hellip;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add https://github.com/mismith0227/hugo_theme_pickles.git themes/pickles
+$ git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic
+$ git submodule add https://github.com/digitalcraftsman/hugo-artists-theme themes/hugo-artists-theme
+</code></pre></div><p>EOF</p>
 
-  HUGO使い方
-  https://wiki.browniealice.net/technote/hugo/how_to_use_hugo/
-  「Hugoは静的Webページ変換ツールの1つ」
-  「基本的にはMarkdownで記事を書き, Hugoを起動して変換してもらって所定の静的なWebページを作る.」
-
-  HugoとGitHub Pagesで静的サイトを公開する
-  https://qiita.com/satzz/items/e24bd703fc04fb45f7ef
-
-  &lt;&lt; Hugoのインストール (Ubuntu 16.04 LTS) &gt;&gt;
-
-  × $ sudo apt-get install hugo --&gt; 古いhugoがインストールされる
-
-  × $ wget https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb
-  × $ sudo apt install ./hugo_0.40.2_Linux-64bit.deb
-  ※ これでもだいぶ古い
-
-  〇 $ wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.deb
-  〇 $ sudo apt install ./hugo_0.68.3_Linux-64bit.deb
-  ※ 太田まさんが使っているバージョン
-
-  &lt;&lt; サイト(hugo_blog)を作る &gt;&gt;
-
-  $ hugo new site hugo_blog
-  Congratulations! Your new Hugo site is created in &quot;/home/tomonobu/git/hugo_blog&quot;.
-
-  $ cd hugo_blog
-
-  &lt;&lt; gitにコミット &gt;&gt;
-
-  $ git init .
-  $ curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/Go.gitignore
-
-  $ git add -A
-  $ git commit -m &quot;Init Hugo.&quot;
-
-  &lt;&lt; GitHubにあげる &gt;&gt;
-
-  GitHubでリポジトリ作成 (hugo_blog)
-  以下、チュートリアル
-  --------------------------------------
-  echo &quot;# hugo_blog&quot; &gt;&gt; README.md
-  git init
-  git add README.md
-  git commit -m &quot;first commit&quot;
-  git remote add origin https://github.com/Tomonobu3110/hugo_blog.git
-  git push -u origin master
-  --------------------------------------
-
-  $ git remote add origin https://github.com/Tomonobu3110/hugo_blog.git
-  $ git push -u origin master
-
- &lt;&lt; 設定ファイルいじり &gt;&gt;
-
-  $ vi config.toml
-  -----
-  baseurl = &quot;https://tomonobu3110.github.io/hugo_blog/&quot;
-  languageCode = &quot;ja-JP&quot;
-  title = &quot;Tomo3110's New Hugo Site&quot;
-  publishDir = &quot;docs&quot;
-  copyright = &quot;Copyright; 2020, Tomonobu Saito. All rights reserved.&quot;
-  theme = &quot;pickles&quot;
-  -----
-
-  &lt;&lt; 記事追加 &gt;&gt;
-
-  $ hugo new posts/my-first-post.md
-  $ vi content/posts/my-first-post.md
-
-  Hugo で使える Markdown の記法
-  https://k-kaz-git.github.io/post/hugo-markdown/
-
-  Markdown Cheatsheet
-  https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
-  $ git submodule add https://github.com/mismith0227/hugo_theme_pickles.git themes/pickles
-
-  &lt;&lt; ローカルデバッグ &gt;&gt;
-
-  HugoをWebサーバとして使う
-  https://wave.hatenablog.com/entry/2016/05/12/074500
-
-  $ hugo server --bind=&quot;43.31.104.100&quot; --port=8080 --baseURL=&quot;43.31.104.100&quot;
-
-  ブラウザで http://43.31.104.100:8080/ にアクセスすると
-  ホームページが見える！！
-
-  $ hugo -D -t pickles
-
-  ==&gt; &quot;-D&quot; はドラフト版も含める (ドラフト記事は記事の .md のヘッダに draft : true がある)
-  ==&gt; &quot;-t&quot; はテーマ指定
-
-  $ git add -A
-  $ git commit -m &quot;theme : pickles&quot;
-  $ git push origin master
-
-  ==&gt; テーマがあると docs の下に index.html が生成される様子
-      ※テーマがないと index.xml だけ...
-
-  &lt;&lt; GiuHub側 &gt;&gt;
-
-  リポジトリのページを開いて Settings -&gt; GutHub Pages -&gt; Source -&gt; master branch /docs folder と設定して保存する.
-  するとmasterブランチの docs フォルダ 以下がWebページだとみなしてWebサイトにしてくれる.
-  -----
-  Your site is published at https://tomonobu3110.github.io/hugo_blog/
-  -----
-
-  ● テーマについて
-
-  テーマは &quot;Pickles&quot; がいい感じ
-  https://themes.gohugo.io/hugo_theme_pickles/
-
-  いろいろ追加...
-
-  $ git submodule add https://github.com/mismith0227/hugo_theme_pickles.git themes/pickles
-  $ git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic
-  $ git submodule add https://github.com/digitalcraftsman/hugo-artists-theme themes/hugo-artists-theme
-</code></pre>
   </section>
   <footer>
     
@@ -190,6 +155,7 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
+          <a href="https://tomonobu3110.github.io/hugo_blog/posts/test/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
