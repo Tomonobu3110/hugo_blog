@@ -94,6 +94,16 @@ $ hugo new posts/my-first-post.md
 $ vi content/posts/my-first-post.md
 ```
 
+```my-first-post.md
+---
+title: "My First Post"
+date: 2020-04-01T14:14:38+09:00
+---
+My first post.
+```
+
+※ ```draft: true``` は削除する
+
 [Hugo で使える Markdown の記法](https://k-kaz-git.github.io/post/hugo-markdown/)
 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -120,17 +130,26 @@ $ hugo server --bind="xxx.xxx.xxx.xxx" --port=8080 --baseURL="xxx.xxx.xxx.xxx"
 # ビルドとデプロイ
 
 ```bash
-$ hugo -D
-```
+$ hugo
 
-* "-D" はドラフト版も含める (ドラフト記事は記事の .md のヘッダに draft : true がある)
-* "-t" はテーマ指定
+                   | EN
+-------------------+-----
+  Pages            | 14
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  4
+  Processed images |  0
+  Aliases          |  2
+  Sitemaps         |  1
+  Cleaned          |  0
 
-```bash
+Total in 89 ms
+
 $ git add -A
-$ git commit -m "theme : pickles"
+$ git commit -m "add: first post"
 $ git push origin master
 ```
+※ hugo の出力結果の数字は実際とは少し違うと思います
 
 テーマがあると docs の下に index.html が生成される様子  
 テーマがないと index.xml だけ...
