@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ja-JP">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
@@ -53,6 +53,46 @@
 
 <article class="c-article p-list-article">
   <header>
+    <h2 class="c-title c-article__title"><a href="https://tomonobu3110.github.io/hugo_blog/posts/quick-start-within-3min/">Hugo &#43; GitHub をつかって3分で静的サイトを立ち上げる</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2020-04-02T10:58:52&#43;09:00">
+        Apr 2, 2020
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    環境：ローカルマシン(Ubuntu 16.04 LTS) GitHub HUGO使い方 https://wiki.browniealice.net/technote/hugo/how_to_use_hugo/ 「Hugoは静的Webページ変換ツールの1つ」 「基本的にはMarkdownで記事を書き, Hugoを起動して変換してもらって所定の静的なWebページを作る.」 HugoとGitHub Pagesで静的サイトを公開する https://qiita.com/satzz/items/e24bd703fc04fb45f7ef &lt;&lt; Hugoのインストール (Ubuntu 16.04 LTS) &gt;&gt; × $ sudo apt-get install hugo --&gt; 古いhugoがインストールされる × $ wget https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb × $ sudo apt install ./hugo_0.40.2_Linux-64bit.deb ※ これでもだいぶ古い 〇 $ wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.deb 〇 $ sudo apt install ./hugo_0.68.3_Linux-64bit.deb ※ 太田まさんが使っているバージョン &lt;&lt; サイト(hugo_blog)を作る &gt;&gt; $ hugo new site hugo_blog Congratulations! Your new Hugo site is created in &quot;/home/tomonobu/git/hugo_blog&quot;. $ cd hugo_blog &lt;&lt; gitにコミット &gt;&gt; $ git init .
+  </div>
+  
+  <a href="https://tomonobu3110.github.io/hugo_blog/posts/quick-start-within-3min/" class="c-article__btn p-list-article__btn">Read more</a>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://tomonobu3110.github.io/hugo_blog/posts/my-3rd-post/">３番目の記事です</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2020-04-02T10:53:12&#43;09:00">
+        Apr 2, 2020
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    テーブル    Tables Are Cool     col 3 is right-aligned $1600   col 2 is centered $12   zebra stripes are neat $1    Hugo Markdown Cheatsheet
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
     <h2 class="c-title c-article__title"><a href="https://tomonobu3110.github.io/hugo_blog/posts/my-2nd-post/">My 2nd Post</a></h2>
     <p class="c-article__meta">
       Posted on
@@ -62,8 +102,8 @@
     </p>
   </header>
   <div class="c-article__summary">
-    AAA strong
-Code var s = &#34;JavaScript syntax highlighting&#34;; alert(s); s = &#34;Python syntax highlighting&#34; print s CCC  aaa bbb ccc  EOF
+    文字装飾 strong
+コード var s = &#34;JavaScript syntax highlighting&#34;; alert(s); s = &#34;Python syntax highlighting&#34; print s 番号付きリスト  aaa bbb ccc  EOF
   </div>
   
 </article>

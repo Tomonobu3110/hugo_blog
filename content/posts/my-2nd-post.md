@@ -2,11 +2,11 @@
 title: "My 2nd Post"
 date: 2020-04-01T18:23:05+09:00
 ---
-# AAA
+# 文字装飾
 
 **strong**
 
-## Code
+## コード
 
 ```javascript
 var s = "JavaScript syntax highlighting";
@@ -18,7 +18,7 @@ s = "Python syntax highlighting"
 print s
 ```
 
-## CCC
+## 番号付きリスト
 
 1. aaa
 1. bbb

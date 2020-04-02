@@ -1,5 +1,5 @@
 baseURL = "https://tomonobu3110.github.io/hugo_blog/"
-languageCode = "en-us"
+languageCode = "ja-JP"
 title = "Tomo3110's New Hugo Site"
 publishDir = "docs"
 theme = "pickles"

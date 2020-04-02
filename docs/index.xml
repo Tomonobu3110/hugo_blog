@@ -5,12 +5,30 @@
     <link>https://tomonobu3110.github.io/hugo_blog/</link>
     <description>Recent content on Tomo3110&#39;s New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ja-JP</language>
     <copyright>Copyright; 2020, Tomonobu Saito. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 18:23:05 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2020 10:58:52 +0900</lastBuildDate>
     
 	<atom:link href="https://tomonobu3110.github.io/hugo_blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo &#43; GitHub をつかって3分で静的サイトを立ち上げる</title>
+      <link>https://tomonobu3110.github.io/hugo_blog/posts/quick-start-within-3min/</link>
+      <pubDate>Thu, 02 Apr 2020 10:58:52 +0900</pubDate>
+      
+      <guid>https://tomonobu3110.github.io/hugo_blog/posts/quick-start-within-3min/</guid>
+      <description>環境：ローカルマシン(Ubuntu 16.04 LTS) GitHub HUGO使い方 https://wiki.browniealice.net/technote/hugo/how_to_use_hugo/ 「Hugoは静的Webページ変換ツールの1つ」 「基本的にはMarkdownで記事を書き, Hugoを起動して変換してもらって所定の静的なWebページを作る.」 HugoとGitHub Pagesで静的サイトを公開する https://qiita.com/satzz/items/e24bd703fc04fb45f7ef &amp;lt;&amp;lt; Hugoのインストール (Ubuntu 16.04 LTS) &amp;gt;&amp;gt; × $ sudo apt-get install hugo --&amp;gt; 古いhugoがインストールされる × $ wget https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb × $ sudo apt install ./hugo_0.40.2_Linux-64bit.deb ※ これでもだいぶ古い 〇 $ wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.deb 〇 $ sudo apt install ./hugo_0.68.3_Linux-64bit.deb ※ 太田まさんが使っているバージョン &amp;lt;&amp;lt; サイト(hugo_blog)を作る &amp;gt;&amp;gt; $ hugo new site hugo_blog Congratulations! Your new Hugo site is created in &amp;quot;/home/tomonobu/git/hugo_blog&amp;quot;. $ cd hugo_blog &amp;lt;&amp;lt; gitにコミット &amp;gt;&amp;gt; $ git init .</description>
+    </item>
+    
+    <item>
+      <title>３番目の記事です</title>
+      <link>https://tomonobu3110.github.io/hugo_blog/posts/my-3rd-post/</link>
+      <pubDate>Thu, 02 Apr 2020 10:53:12 +0900</pubDate>
+      
+      <guid>https://tomonobu3110.github.io/hugo_blog/posts/my-3rd-post/</guid>
+      <description>テーブル    Tables Are Cool     col 3 is right-aligned $1600   col 2 is centered $12   zebra stripes are neat $1    Hugo Markdown Cheatsheet</description>
+    </item>
     
     <item>
       <title>My 2nd Post</title>
@@ -18,8 +36,8 @@
       <pubDate>Wed, 01 Apr 2020 18:23:05 +0900</pubDate>
       
       <guid>https://tomonobu3110.github.io/hugo_blog/posts/my-2nd-post/</guid>
-      <description>AAA strong
-Code var s = &amp;#34;JavaScript syntax highlighting&amp;#34;; alert(s); s = &amp;#34;Python syntax highlighting&amp;#34; print s CCC  aaa bbb ccc  EOF</description>
+      <description>文字装飾 strong
+コード var s = &amp;#34;JavaScript syntax highlighting&amp;#34;; alert(s); s = &amp;#34;Python syntax highlighting&amp;#34; print s 番号付きリスト  aaa bbb ccc  EOF</description>
     </item>
     
     <item>
