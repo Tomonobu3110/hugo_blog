@@ -11,7 +11,7 @@ draft: false
 # 参考になるブログなど
 
 [HUGO使い方](https://wiki.browniealice.net/technote/hugo/how_to_use_hugo/)  
-「Hugoは静的Webページ変換ツールの1つ」
+「Hugoは静的Webページ変換ツールの1つ」  
 「基本的にはMarkdownで記事を書き, Hugoを起動して変換してもらって所定の静的なWebページを作る.」
 
 [HugoとGitHub Pagesで静的サイトを公開する](https://qiita.com/satzz/items/e24bd703fc04fb45f7ef)
